@@ -1,19 +1,22 @@
-candy_count = int(input("How many candies do you have?: "))
-friend_count = int(input("How many kids are there? (Don't forget yourself!): "))
-print("\n")
+candy_count = int(input("🍬 How many candies do you have?: "))
+friend_count = int(input("🧑‍🤝‍🧑 How many kids are there? (Don't forget yourself!): "))
+print("\n" + "="*40)
 
-candies_per_person = candy_count / friend_count
+candies_per_person = candy_count // friend_count
 leftover_candies = candy_count % friend_count
 
+print(f"\n🍭 Total candies: {candy_count}")
+print(f"👫 Number of kids: {friend_count}")
+print("-"*40)
+print(f"Each person gets: {candies_per_person} 🍬")
 
 if leftover_candies == 0:
-    print(f"Yay! Everyone got the same amount of candy! Each person gets {int(candies_per_person)} candies.")
+    print("\n🎉 Yay! Everyone got the same amount of candy!")
 else:
-    print(f"Each person gets {int(candies_per_person)} candies.")
-    print(f"There will be {leftover_candies} candies left over.")
-    print("Hmm… there are some extra candies! Who gets them?")
+    print(f"\n🍬 Leftover candies: {leftover_candies}")
+    print("🤔 Hmm… there are some extra candies! Who gets them?")
 
-
+print("="*40 + "\n")
 
 '''
 Problem Name: Candy Sharing Helper
