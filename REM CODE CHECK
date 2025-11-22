@@ -1,3 +1,13 @@
-﻿https://github.com/YuvenRai/python_tutorials.git
-Push  OR  PULL To GITHUB
+$repo = "$env:USERPROFILE\python_tutorials"; if (-not (Test-Path $repo)) { git clone https://github.com/YuvenRai/python_tutorials.git $repo } ; Set-Location $repo ; $lines = @('https://github.com/YuvenRai/python_tutorials.git','Push  OR  PULL To GITHUB','[<- only line selection]') ; $lines | Out-File -FilePath 'REM CODE CHECK' -Encoding utf8 ; Get-Content -Path 'REM CODE CHECK' -Raw
+Completed (1/1) Create file REM CODE CHECK
+
+Done — file created and confirmed.
+
+What I changed
+
+Wrote REM CODE CHECK in python_tutorials with these exact lines:
+https://github.com/YuvenRai/python_tutorials.git
+Push OR PULL To GITHUB
 [<- only line selection]
+Verification
+
